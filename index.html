@@ -24,12 +24,14 @@
       padding: 15px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 90%;
+      max-width: 900px;     /* batas lebar maksimal */
+      width: 90%;           /* biar responsif */
     }
     video {
-      border-radius: 10px;
-      max-width: 100%;
+      width: 100%;          /* biar video otomatis penuh */
       height: auto;
+      border-radius: 10px;
+      cursor: pointer;      /* nunjukkin bisa diklik */
     }
   </style>
 </head>
@@ -37,7 +39,7 @@
   <h1>Video Saya</h1>
   <div class="video-box">
     <video controls>
-      <source src="video.mp4" type="video/mp4">
+      <source src="video.mp4.MOV" type="video/quicktime">
       Browser Anda tidak mendukung pemutar video.
     </video>
   </div>
