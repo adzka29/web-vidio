@@ -4,14 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Video Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      width: 850px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f1f1f1;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+  </style>
 </head>
 <body>
-  <h1>Video Player</h1>
-
-  <video width="800" height="450" controls>
-    <source src="vidio.mp4" type="video/mp4">
-    Browser kamu tidak mendukung video.
-  </video>
-
+  <div class="container">
+    <h1>🎬 Video Player</h1>
+    <video controls>
+      <source src="vidio.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+  </div>
 </body>
 </html>
